@@ -1,21 +1,22 @@
 {
   "expo": {
-    "name": "AedFinder",
-    "slug": "AedFinder",
+    "name": "Life's Heart",
+    "slug": "life-heart",
+    "privacy": "public",
+    "description": "This is an App which can be used to find nearest AED with directions and also step by step CPR instructions",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/appLogo.jpg",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/appLogo.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+
+    "assetBundlePatterns": ["assets/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -23,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "life.heart"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-location"]
   }
 }
