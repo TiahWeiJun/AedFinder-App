@@ -9,7 +9,6 @@ import jsonData from "../data/Aed.json";
 import AedModal from "../components/AedModal";
 import { API_KEY } from "../env";
 
-// Geocoder.init("AIzaSyBxkvfu6PiHpYDRaFniCHOFaKIu12I0geA");
 Geocoder.init(API_KEY);
 
 export default MapScreen = () => {
